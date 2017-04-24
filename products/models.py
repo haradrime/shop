@@ -13,7 +13,7 @@ class Product(models.Model):
         return "%s, %s" % (self.price, self.name)
 
     class Meta:
-        verbose_name = 'Товары'
+        verbose_name = 'Товар'
         verbose_name_plural = 'Товары'
 
 
