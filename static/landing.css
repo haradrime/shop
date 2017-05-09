@@ -10,7 +10,7 @@ html, body{
 }
 
 .general-container{
-    background: url('static_prod/img/bg_image.jpg');
+    background: url('../img/bg_image.jpg');
     height: 100%;
 
 }
