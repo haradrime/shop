@@ -35,9 +35,9 @@ html, body{
     padding: 10px;
 }
 
-.section{
+/*.section{
     padding: 50px 0;
-}
+}*/
 
 .section h1{
     margin-bottom: 40px;
@@ -80,4 +80,32 @@ html, body{
 .product-image-item{
     padding: 5px;
     margin-bottom: 5px;
+}
+
+.navbar-top{
+    min-height: 10px;
+    height: 20px;
+    background-color: #4cae4c;
+    border: none;
+    border-radius: 0;
+}
+
+.navbar-main{
+    border: none;
+    border-radius: 0;
+}
+
+.basket-container{
+    position: relative;
+    width: 400px;
+    padding: 15px 10px;
+}
+
+.basket-items{
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    background-color: #4cae4c;
+    z-index: 10;
+    padding: 10px;
 }
