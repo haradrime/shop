@@ -8,19 +8,19 @@ $(document).ready(function(){
         console.log(nmb);
         var submit_btn = $('#submit_btn');
         var product_id = submit_btn.data("product_id");
-        var product_name = submit_btn.data("name");
-        var product_price = submit_btn("price");
+        var name = submit_btn.data("name");
+        var price = submit_btn.data("price");
         console.log(product_id);
-        console.log(product_name);
-        console.log(product_price);
+        console.log(name);
+        console.log(price);
 
-        $('.basket-items ul').append('<li>'+product_name+', ' + nmb + 'шт. ' + 'по ' + product_price + 'руб' +
-            '<span class="delete-item">x</span>' +
+        $('.basket-items ul').append('<li>'+name+', ' + nmb + 'шт. ' + 'по ' + price + 'руб ' +
+            '<a class="delete-item" href="">x</a>' +
             '</li>');
     });
 
     function showingBasket(){
-        $('.basket-items').toggleClass('hidden');
+        $('.basket-items').removeClass('hidden');
     }
 
     $('.basket-container').on('click', function (e) {
@@ -32,11 +32,12 @@ $(document).ready(function(){
         showingBasket();
     });
 
-    $('.basket-container').mouseout(function(){
-        showingBasket();
-    });
+    //$('.basket-container').mouseout(function(){
+    //    showingBasket();
+    //});
 
-    $(document).on('click', '.delete-item', function(){
-        $(this).closest('li')
+    $(document).on('click', '.delete-item', function(e){
+        e.preventDefault();
+        $(this).closest('li').remove();
     })
 });
