@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f7e6b4c0-de09-476c-88e7-b02303a5b07a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/landing/product_item.html" afterPath="$PROJECT_DIR$/templates/landing/product_item.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/navbar.html" afterPath="$PROJECT_DIR$/templates/navbar.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -768,7 +766,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494928869684</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="исправил карточку товара, удалил описание">
+      <created>1494968808088</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1494968808088</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -828,7 +833,8 @@
     <MESSAGE value="почти сделана корзина" />
     <MESSAGE value="корзину сделал, дальше делаем на ajax,чтоб товары сохранялись" />
     <MESSAGE value="корзина работает как надо. добавляет/удаляет товары. сессия сохраняется" />
-    <option name="LAST_COMMIT_MESSAGE" value="корзина работает как надо. добавляет/удаляет товары. сессия сохраняется" />
+    <MESSAGE value="исправил карточку товара, удалил описание" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправил карточку товара, удалил описание" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
