@@ -114,3 +114,9 @@ ENV/
 
 # mkdocs documentation
 /site
+orders/migrations/0005_productinbasket.py
+products/migrations/0004_product_short_description.py
+products/migrations/0005_productimage_is_main.py
+products/migrations/0006_auto_20170504_1648.py
+static/media/static/
+static/static_prod/admin/
