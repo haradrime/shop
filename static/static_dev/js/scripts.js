@@ -69,9 +69,9 @@ $(document).ready(function(){
         showingBasket();
     });
 
-    //$('.basket-container').mouseout(function(){
-    //    showingBasket();
-    //});
+    $('.basket-container').mouseout(function(){
+        showingBasket();
+    });
 
     $(document).on('click', '.delete-item', function(e){
         e.preventDefault();
