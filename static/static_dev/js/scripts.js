@@ -13,7 +13,8 @@ $(document).ready(function(){
             data["is_delete"] = true;
         }
         var url = form.attr("action");
-        console.log(data)
+
+        console.log(data);
         $.ajax({
             url: url,
             type: 'POST',
@@ -38,6 +39,8 @@ $(document).ready(function(){
             }
         })
     }
+
+
     form.on('submit', function(e){
         e.preventDefault();
         console.log('123');
@@ -52,8 +55,6 @@ $(document).ready(function(){
         console.log(price);
 
         basketUpdating(product_id, nmb, is_delete=false)
-
-
     });
 
     function showingBasket(){
@@ -75,8 +76,32 @@ $(document).ready(function(){
 
     $(document).on('click', '.delete-item', function(e){
         e.preventDefault();
-        product_id = $(this).data("product_id")
+        product_id = $(this).data("product_id");
         nmb = 0;
         basketUpdating(product_id, nmb, is_delete=true);
-    })
+    });
+
+    function calculatingBasketAmount(){
+        var total_order_amount = 0;
+        $('.total-product-in-basket-amount').each(function(){
+            total_order_amount = total_order_amount + parseFloat($(this).text());
+        });
+        console.log(total_order_amount);
+        $('#total_order_amount').text(total_order_amount.toFixed(2));
+    }
+
+    $(document).on('change', ".product-in-basket-nmb", function(){
+        var current_nmb = $(this).val();
+        console.log(current_nmb);
+        var current_tr = $(this).closest('tr');
+        var current_price = parseFloat(current_tr.find('.product-price').text()).toFixed(2);
+        console.log(current_price);
+        var total_amount = parseFloat(current_nmb*current_price).toFixed(2);
+        current_tr.find('.total-product-in-basket-amount').text(total_amount);
+
+        calculatingBasketAmount();
+
+    });
+
+    calculatingBasketAmount();
 });

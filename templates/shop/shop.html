@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="col-xs-12 col-sm-4 col-md-3 sidebar pull-left">
+        <!-- filtering by product features -->
+		<div class="side_block_collapsible side_menu_wrap side_menu_categories hidden-xs">
+            <a class="title" href="#"><i class="fa fa-bars"></i>Каталог</a>
+            <ul class="menu menu_dropdown">
+                <li class=""><div class="link">
+                    <a href="http://technogeek.ru/stop/sale/" class="menu__link--sale">Распродажа</a></div></li>
+                <li class=""><div class="link">
+                    <a data-icon-id="1" href="/shop/ipod/">iPod</a></div></li>
+                <li class="hassub"><div class="link">
+                    <span class="sub_toggle"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span><a data-icon-id="2" href="/shop/iphone/">iPhone<i class="badge_spacer"></i><span class="badge " style="background: text || hex || rgb">NEW!</span></a></div>
+					<div class="submenu sub_dropdown sub_all_levels">
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="34" href="/shop/iphone/kupit-iphone-7/">iPhone 7</a></div></li>
+                                <li class=""><div class="link"><a data-icon-id="35" href="/shop/iphone/kupit-iphone-6s/">iPhone 6s</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="36" href="/shop/iphone/kupit-iphone-se/">iPhone SE</a></div></li>
+                                <li class=""><div class="link"><a data-icon-id="37" href="/shop/iphone/kupit-iphone-5s/">iPhone 5s</a></div></li>
+                            </ul>
+						</div>
+                    </div>
+                </li>
+                <li class="hassub">
+                    <div class="link">
+                        <span class="sub_toggle"><i class="fa fa-plus"></i>
+                            <i class="fa fa-minus"></i></span>
+                                <a data-icon-id="11" href="/shop/ipad/">iPad</a>
+                    </div>
+	                <div class="submenu sub_dropdown sub_all_levels">
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="38" href="/shop/ipad/kupit-ipad-pro/">iPad Pro</a></div></li>
+                                <li class=""><div class="link"><a data-icon-id="49" href="/shop/ipad/kupit-ipad-2017/">iPad</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="40" href="/shop/ipad/kupit-ipad-mini-4/">iPad mini 4</a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+				<li class=""><div class="link"><a data-icon-id="12" href="/shop/apple-watch/">Apple Watch</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="4" href="/shop/macbook/">MacBook</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="5" href="/shop/macbook-air/">MacBook Air</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="6" href="/shop/mabook-pro-retina/">MacBook Pro</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="7" href="/shop/mac-mini/">Mac mini</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="8" href="/shop/imac/">iMac</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="9" href="/shop/mac-pro/">Mac Pro</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="47" href="/shop/kupit-samsung/">Samsung</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="14" href="/shop/apple-for-car/">Автомобильные аксессуары</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="16" href="/shop/acoustics/">Акустические системы</a></div></li>
+	            <li class=""><div class="link"><a data-icon-id="15" href="/shop/batteries/">Внешние аккумуляторы</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="50" href="/shop/vneshnie-nakopiteli-ios-macos/">Внешние накопители</a></div></li>
+                <li class="active"><div class="link"><a data-icon-id="17" href="/shop/dock_holders/">Держатели и док-станции</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="27" href="/shop/zapchasti/">Запчасти</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="18" href="/shop/chargers/">Зарядные устройства</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="19" href="/shop/health-and-fitness/">Здоровье и фитнес</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="20" href="/shop/cables-adapters/">Кабели и переходники</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="21" href="/shop/monitors/">Мониторы</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="22" href="/shop/headphones/">Наушники и гарнитуры</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="29" href="/shop/ochki-virtualnoy-realnosti/">Очки VR</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="24" href="/shop/screen-protectors/">Пленки и стекла</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="13" href="/shop/wi-fi/">Сетевое оборудование</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="10" href="/shop/apple-tv/">ТВ-оборудование</a></div></li>
+                <li class=""><div class="link"><a data-icon-id="23" href="/shop/periphery/">Устройства ввода</a></div></li>
+                <li class="hassub">
+                    <div class="link">
+                        <span class="sub_toggle"><i class="fa fa-plus"></i><i class="fa fa-minus"></i></span>
+                        <a data-icon-id="28" href="/shop/cases/">Чехлы</a>
+                    </div>
+                    <div class="submenu sub_dropdown sub_all_levels">
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="43" href="/shop/cases/chekhol-dlya-iphone/">Чехол для iPhone</a></div></li>
+                                <li class=""><div class="link"><a data-icon-id="44" href="/shop/cases/chekhol-dlya-ipad/">Чехол для iPad</a></div></li>
+                            </ul>
+                        </div>
+                        <div class="col ">
+                            <ul class="level2">
+                                <li class=""><div class="link"><a data-icon-id="46" href="/shop/cases/chekhol-dlya-apple-watch/">Чехол для Apple Watch</a></div></li>
+                                <li class=""><div class="link"><a data-icon-id="45" href="/shop/cases/chekhol-dlya-macbook/">Чехол для MacBook</a></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class=""><div class="link"><a data-icon-id="26" href="/shop/other/">Разное</a></div></li>
+            </ul>
+        </div>
+        <div class="side_menu_wrap hidden-xs">
+            <div class="title">Информация</div>
+                <ul class="menu menu_dropdown">
+                    <li class=""><div class="link"><a data-icon-id="1" href="/shop/apple_kredit/">Apple в кредит</a></div></li>
+                    <li class=""><div class="link"><a data-icon-id="2" href="/shop/garantiya /">Гарантия</a></div></li>
+                    <li class=""><div class="link"><a data-icon-id="3" href="/shop/club_cards/">Клубные карты</a></div></li>
+                    <li class=""><div class="link"><a data-icon-id="4" href="/shop/dostavka/">Доставка</a></div></li>
+                    <li class=""><div class="link"><a data-icon-id="5" href="/shop/oplata/">Оплата</a></div></li>
+                    <li class=""><div class="link"><a data-icon-id="6" href="/shop/kontakty/">Контакты</a></div></li>
+                </ul>
+        </div>
+    </div>
+{% endblock %}

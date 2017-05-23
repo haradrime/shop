@@ -9,7 +9,7 @@ html, body{
     margin: 20px
 }
 .product-item{
-    height: 360px;
+    height: 400px;
     background-color: white;
     border: 1px solid lightgrey;
     position: relative;

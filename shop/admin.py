@@ -25,6 +25,7 @@ class ProductAdmin(admin.ModelAdmin):
     class Meta:
         model = Product
 
+
 admin.site.register(Product, ProductAdmin)
 
 
@@ -34,13 +35,5 @@ class ProductImageAdmin(admin.ModelAdmin):
     class Meta:
         model = ProductImage
 
+
 admin.site.register(ProductImage, ProductImageAdmin)
-
-
-class ProductSubCategoryAdmin(admin.ModelAdmin):
-    list_display = [field.name for field in ProductSubCategory._meta.fields]
-
-    class Meta:
-        model = ProductSubCategory
-
-admin.site.register(ProductSubCategory, ProductSubCategoryAdmin)

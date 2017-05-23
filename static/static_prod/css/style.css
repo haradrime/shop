@@ -12,7 +12,7 @@ html, body{
 }
 
 .product-item{
-    height: 215px;
+    height: 360px;
     background-color: white;
     border: 1px solid lightgrey;
     position: relative;
@@ -24,4 +24,21 @@ html, body{
     position: absolute;
     bottom: 15px;
     left: 50px;
+}
+
+.wrapper{
+    min-height: 100px;
+}
+
+.wrapper-content{
+    overflow: auto;
+    padding-bottom: 180px; /* must be same height as the footer */
+}
+
+.footer {
+    position: relative;
+    margin-top: -180px; /* negative value of footer height */
+    height: 180px;
+    clear: both;
+    background-color: grey;
 }
