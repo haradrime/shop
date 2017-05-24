@@ -61,18 +61,18 @@ $(document).ready(function(){
         $('.basket-items').removeClass('hidden');
     }
 
-    $('.basket-container').on('click', function (e) {
-        e.preventDefault();
-        showingBasket();
-    });
+    // $('.basket-container').on('click', function (e) {
+    //     e.preventDefault();
+    //     showingBasket();
+    // });
 
     $('.basket-container').mouseover(function(){
         showingBasket();
     });
 
-    $('.basket-container').mouseout(function(){
-        showingBasket();
-    });
+    // $('.basket-container').mouseout(function(){
+    //     showingBasket();
+    // });
 
     $(document).on('click', '.delete-item', function(e){
         e.preventDefault();
@@ -97,6 +97,7 @@ $(document).ready(function(){
         var current_price = parseFloat(current_tr.find('.product-price').text()).toFixed(2);
         console.log(current_price);
         var total_amount = parseFloat(current_nmb*current_price).toFixed(2);
+        console.log(total_amount);
         current_tr.find('.total-product-in-basket-amount').text(total_amount);
 
         calculatingBasketAmount();

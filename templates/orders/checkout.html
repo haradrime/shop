@@ -5,6 +5,7 @@
 {% block content %}
     <div class="container">
         <div class="row">
+        {% if products_in_basket %}
             <div class="col-lg-8 col-lg-offset-2">
                 <h3 class="text-center">Товары в корзине</h3>
                 <h5 class="text-center">Общая стоимость: {{ request.session.basket.total_amount }} руб </h5>
@@ -76,6 +77,9 @@
                 </form>
 
             </div>
+        {% else %}
+            <h3 class="text-center">В вашей корзине нет товаров</h3>
+        {% endif %}
         </div>
     </div>
 {% endblock %}
